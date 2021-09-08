@@ -28,15 +28,15 @@ public class DatabaseManager {
         // Setup the connection with the DB
         try {
             if ((connection == null) || connection.isClosed()) {
-            	// connection = DriverManager
-                //         .getConnection("jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/knowledge?"
-                //                 + "user=root&password=tmak21&autoReconnect=true");
+            	connection = DriverManager
+                        .getConnection("jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/knowledge?"
+                                + "user=root&password=root&autoReconnect=true");
 
-                String connString = "jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/knowledge";
-                String user = "root";
-                String password = "root";
+                // String connString = "jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/knowledge";
+                // String user = "root";
+                // String password = "root";
 
-                connection = DriverManager.getConnection(connString, user, password);
+                // connection = DriverManager.getConnection(connString, user, password);
 
             }
         } catch (SQLException e) {
