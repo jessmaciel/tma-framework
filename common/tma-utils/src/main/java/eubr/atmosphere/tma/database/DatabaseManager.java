@@ -34,7 +34,7 @@ public class DatabaseManager {
 
                 String connString = "jdbc:mysql://mysql-0.mysql.default.svc.cluster.local:3306/knowledge";
                 String user = "root";
-                String password = "tmak21";
+                String password = "root";
 
                 connection = DriverManager.getConnection(connString, user, password);
 
